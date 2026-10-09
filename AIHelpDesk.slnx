@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/backend/">
+    <Project Path="backend/AIHelpDesk.API/AIHelpDesk.API.csproj" />
+    <Project Path="backend/AIHelpDesk.Application/AIHelpDesk.Application.csproj" />
+    <Project Path="backend/AIHelpDesk.Domain/AIHelpDesk.Domain.csproj" />
+    <Project Path="backend/AIHelpDesk.Infrastructure/AIHelpDesk.Infrastructure.csproj" />
+    <Project Path="backend/AIHelpDesk.Tests/AIHelpDesk.Tests.csproj" />
+  </Folder>
+</Solution>

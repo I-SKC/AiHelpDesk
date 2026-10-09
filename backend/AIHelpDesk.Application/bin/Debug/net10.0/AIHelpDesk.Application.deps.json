@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "AIHelpDesk.Application/1.0.0": {
+        "dependencies": {
+          "AIHelpDesk.Domain": "1.0.0"
+        },
+        "runtime": {
+          "AIHelpDesk.Application.dll": {}
+        }
+      },
+      "AIHelpDesk.Domain/1.0.0": {
+        "runtime": {
+          "AIHelpDesk.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AIHelpDesk.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AIHelpDesk.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
