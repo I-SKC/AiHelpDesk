@@ -60,6 +60,10 @@ builder.Services
     .AddSignInManager()
     .AddDefaultTokenProviders();
 
+builder.Services.AddScoped<
+    AIHelpDesk.Application.Agent.Services.IAgentService,
+    AIHelpDesk.Infrastructure.Services.AgentService>();
+
 var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
@@ -75,6 +79,10 @@ using (var scope = app.Services.CreateScope())
     await IdentitySeeder.SeedRolesAsync(roleManager);
 
     await IdentitySeeder.SeedAdminAsync(
+        userManager,
+        app.Configuration);
+        
+    await AgentSeeder.SeedAgentAsync(
         userManager,
         app.Configuration);
 }
